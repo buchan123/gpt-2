@@ -288,6 +288,7 @@ def main():
                         avg=avg_loss[0] / avg_loss[1]))
 
                 counter += 1
+            save()
         except KeyboardInterrupt:
             print('interrupted')
             save()
