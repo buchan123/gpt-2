@@ -256,8 +256,8 @@ def main():
 
         try:
             while counter < args.steps :
-                if counter % args.save_every == 0:
-                    #save()
+                if counter % args.steps - 1 == 0:
+                    save()
                 if counter % args.sample_every == 0:
                     generate_samples()
                 if args.val_every > 0 and (counter % args.val_every == 0 or counter == 1):
@@ -288,7 +288,7 @@ def main():
                         avg=avg_loss[0] / avg_loss[1]))
 
                 counter += 1
-            save()
+     
         except KeyboardInterrupt:
             print('interrupted')
             save()
