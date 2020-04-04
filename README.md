@@ -13,7 +13,7 @@ See more details in our [blog post](https://blog.openai.com/better-language-mode
 
 This repository is meant to be a starting point for researchers and engineers to experiment with GPT-2.
 
-### Some caveats
+### Some cavats
 
 - GPT-2 models' robustness and worst case behaviors are not well-understood.  As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important.
 - The dataset our GPT-2 models were trained on contains many texts with [biases](https://twitter.com/TomerUllman/status/1101485289720242177) and factual inaccuracies, and thus GPT-2 models are likely to be biased and inaccurate as well.
